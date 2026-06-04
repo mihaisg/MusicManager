@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Store App Description</title>
+    <style>
+        body {
+            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1c1c1c;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #333333;
+        }
+        h2 {
+            color: #0078d4;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 8px;
+            margin-top: 28px;
+        }
+        h3 {
+            color: #f0f0f0;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        ul {
+            margin-top: 4px;
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #a5d6a7;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: "Consolas", "Courier New", monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            border: 1px solid #444444;
+            margin: 10px 0;
+        }
+        .note-box {
+            background-color: #2d251e;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            border-radius: 0 4px 4px 0;
+            margin: 20px 0;
+        }
+        .note-box h3 {
+            color: #f59e0b;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Overview</h2>
+    <p>Take complete control of your digital music library with <strong>[Insert App Name]</strong>, a powerful, lightning-fast batch audio utility built explicitly for Windows 11. Designed to seamlessly handle collections ranging from single albums to massive libraries of over 10,000 files, this application combines automatic folder renaming, deep metadata tagging, and built-in playback into one beautiful, native interface.</p>
+    <p>Featuring full support for both <strong>Light and Dark themes</strong>, the application adapts beautifully to your desktop environment while processing your files entirely locally, keeping your library secure.</p>
+
+    <h2>Key Features</h2>
+
+    <h3>1. Intelligent Tracklist Renamer</h3>
+    <p>Say goodbye to manually typing out file names. If you have an album folder where songs start sequentially (e.g., 01, 02, 03), the app will instantly auto-match and batch-rename the entire folder using a simple, standard <code>Tracklist.txt</code> template.</p>
+    <p><strong>Supported Tracklist Template:</strong></p>
+<pre>01. Song Title 1
+02. Song Title 2
+03. Song Title 3
+...
+10. Song Title 10</pre>
+
+    <h3>2. Automated Metadata Editor & Tagger</h3>
+    <p>Instantly tag an entire selection or complete album using advanced automated parsing. By referencing a structured <code>Tracklist.txt</code> file, the app automatically extracts and applies high-level album metadata alongside granular track info.</p>
+    <p><strong>Supported Metadata Template:</strong></p>
+<pre>Artist - Album (YYYY)
+RLS - dd.mm.YYYY
+
+Tracklist:
+01. Song Title 1 (Prod. Composer)
+02. Song Title 2 (Prod. Composer)
+...
+10. Song Title 10 (Prod. Composer)</pre>
+
+    <p><strong>Auto-Detected Tags Include:</strong></p>
+    <ul>
+        <li><strong>Album Artwork:</strong> Auto-loads local folder images named <code>Cover.jpg</code> or <code>Cover.png</code>.</li>
+        <li><strong>Track Data:</strong> Title, Artist, Album Artist, Composer, Year, and Track Info (Current Track # / Total Tracks).</li>
+    </ul>
+
+    <h3>3. Advanced Mass &amp; Individual Tagging</h3>
+    <p>Need to go deeper? Edit individual tracks or mass-tag your entire collection simultaneously (optimized to scale beautifully up to 10,000+ files). Dynamically track saved and missing tags in real-time across a massive array of fields:</p>
+    <ul>
+        <li>Album Cover Art (Change/Replace)</li>
+        <li>Title, Artist, &amp; Album Artist</li>
+        <li>Track Details (Track Number / Total Tracks)</li>
+        <li>Disc Details (Disc Number / Total Discs)</li>
+        <li>Year, Genre, &amp; Comment</li>
+        <li>Composer &amp; BPM (Beats Per Minute)</li>
+    </ul>
+
+    <h3>4. Integrated Player &amp; Random Visualizer</h3>
+    <p>Audition your files right inside the application. Enjoy an immersive playback experience powered by a stunning, dynamically generated random waveform visualizer.</p>
+
+    <h3>5. Real-Time Logging</h3>
+    <p>Transparency at your fingertips. At any moment, toggle the live logging system to review the exact changes, modifications, and updates made to your files.</p>
+
+    <h2>Advanced History &amp; Safety Engine</h2>
+    <ul>
+        <li><strong>Multi-Level Undo:</strong> Made a mistake? The app features an intelligent local backup stack. You can completely revert your changes—either the entire batch or selected tweaks—even <em>after</em> clicking save.</li>
+        <li><strong>Important Architecture Note:</strong> <em>The application must remain open for the Undo history stack to persist. Closing the application finalizes the saved changes to disk.</em></li>
+    </ul>
+
+    <div class="note-box">
+        <h3>Important Notes Before Using:</h3>
+        <ul>
+            <li><strong>Data Safety:</strong> While our editing engine is thoroughly tested to manage large-scale libraries, users are strongly advised to <strong>backup any important audio files</strong> before executing major batch operations.</li>
+            <li><strong>Privacy First:</strong> This app operates 100% offline and locally. Your music files, metadata, and folders are never uploaded to the cloud or shared with third parties.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
